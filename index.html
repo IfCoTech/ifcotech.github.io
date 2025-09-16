@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IfCoTech</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #0066cc; }
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    header { background: #0066cc; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { padding: 50px 20px; text-align: center; background: #f4f4f4; }
+    .hero h1 { color: #0066cc; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+    .service { background: #e9f2fb; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .service h3 { color: #0066cc; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; }
     a.whatsapp {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 10px 20px;
       background: #25D366;
       color: white;
@@ -20,8 +28,45 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to IfCoTech</h1>
-  <p>Your trusted tech and printing partner in Garissa.</p>
-  <a class="whatsapp" href="https://wa.me/254707084716" target="_blank">💬 Chat with us on WhatsApp</a>
+  <header>
+    <h1>IfCoTech</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to IfCoTech</h1>
+    <p>Your trusted tech and printing partner in Garissa.</p>
+    <a class="whatsapp" href="https://wa.me/254707084716" target="_blank">💬 Chat with us on WhatsApp</a>
+  </section>
+
+  <section class="services">
+    <div class="service">
+      <h3>🖨 Printing</h3>
+      <p>High-quality printing services for all your needs.</p>
+    </div>
+    <div class="service">
+      <h3>📑 Photocopy & Lamination</h3>
+      <p>Keep your documents safe and professional.</p>
+    </div>
+    <div class="service">
+      <h3>🌐 Online Services</h3>
+      <p>Reliable digital solutions for the community.</p>
+    </div>
+    <div class="service">
+      <h3>💻 Computer Training</h3>
+      <p>Learn essential computer skills in our classes.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IfCoTech | All Rights Reserved</p>
+    <p>📧 Email: ifcotech.ke@gmail.com</p>
+    <a class="whatsapp" href="https://wa.me/254707084716" target="_blank">💬 WhatsApp Us</a>
+  </footer>
 </body>
 </html>

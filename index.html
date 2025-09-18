@@ -11,7 +11,27 @@
     nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
 
-    .hero { background: linear-gradient(to right, #004080, #0073e6); color: white; text-align: center; padding: 80px 20px; }
+    /* Hero Section with background image */
+    .hero {
+      background: url("images/banner.jpg") no-repeat center center/cover; /* Replace banner.jpg with your own image */
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    /* Dark overlay for readability */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* semi-transparent black */
+    }
+    .hero h1, .hero p, .hero a {
+      position: relative;
+      z-index: 1;
+    }
+
     .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
     .hero p { font-size: 1.2em; margin-bottom: 20px; }
     .hero a { background: white; color: #004080; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
@@ -21,6 +41,7 @@
 
     .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
     .service { background: #f4f4f4; padding: 20px; width: 260px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .service img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
     .service h3 { color: #0073e6; margin-bottom: 10px; }
 
     footer { background: #004080; color: white; text-align: center; padding: 20px; margin-top: 30px; }
@@ -37,7 +58,6 @@
   <!-- Header -->
   <header>
     <div style="display: flex; align-items: center;">
-      <!-- If you want to use the logo image later, replace the text with <img src="logo.png" alt="IfCoTech Logo"> -->
       <h2>IfCoTech</h2>
     </div>
     <nav>
@@ -62,26 +82,31 @@
     <div class="services">
 
       <div class="service">
+        <img src="images/printing.jpg" alt="Printing Service"> <!-- Add your service image -->
         <h3>Printing & Photocopying</h3>
         <p>High-quality printing, photocopying, and lamination for schools, businesses, and individuals, etc.</p>
       </div>
 
       <div class="service">
+        <img src="images/scanning.jpg" alt="Scanning Service"> <!-- Add your service image -->
         <h3>Scanning & Typing</h3>
         <p>Scanning of documents plus typing of exams, reports, assignments, letters, etc.</p>
       </div>
 
       <div class="service">
+        <img src="images/online.jpg" alt="Online Services"> <!-- Add your service image -->
         <h3>Online Services</h3>
         <p>eCitizen services including Good Conduct, Passport application/renewal, NTSA, and more etc.</p>
       </div>
 
       <div class="service">
+        <img src="images/signs.jpg" alt="Electronic Signs"> <!-- Add your service image -->
         <h3>Electronic Signs</h3>
         <p>LED displays, banners, and digital signage for businesses and events, etc.</p>
       </div>
 
       <div class="service">
+        <img src="images/training.jpg" alt="Computer Training"> <!-- Add your service image -->
         <h3>Computer Training</h3>
         <p>Training in computer basics, office software, internet use, and other ICT skills, etc.</p>
       </div>

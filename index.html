@@ -3,70 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IfCoTech</title>
+  <title>IfCoTech – Technology & Printing Solutions</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
-    header { background: #0066cc; color: white; padding: 15px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    header { background: #004080; color: white; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 50px; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
-    .hero { padding: 50px 20px; text-align: center; background: #f4f4f4; }
-    .hero h1 { color: #0066cc; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
-    .service { background: #e9f2fb; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .service h3 { color: #0066cc; }
-    footer { background: #222; color: white; text-align: center; padding: 20px; }
-    a.whatsapp {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
+
+    .hero { background: linear-gradient(to right, #004080, #0073e6); color: white; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; margin-bottom: 20px; }
+    .hero a { background: white; color: #004080; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+    section { padding: 50px 20px; text-align: center; }
+    h2 { color: #004080; margin-bottom: 20px; }
+
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .service { background: #f4f4f4; padding: 20px; width: 260px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .service h3 { color: #0073e6; margin-bottom: 10px; }
+
+    footer { background: #004080; color: white; text-align: center; padding: 20px; margin-top: 30px; }
+    footer a { color: #ffcc00; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* WhatsApp button */
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; }
+    .whatsapp a { background: #25d366; color: white; padding: 12px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>IfCoTech</h1>
+    <div style="display: flex; align-items: center;">
+      <!-- If you want to use the logo image later, replace the text with <img src="logo.png" alt="IfCoTech Logo"> -->
+      <h2>IfCoTech</h2>
+    </div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to IfCoTech</h1>
-    <p>Your trusted tech and printing partner in Garissa.</p>
-    <a class="whatsapp" href="https://wa.me/254707084716" target="_blank">💬 Chat with us on WhatsApp</a>
+    <h1>Empowering You with Technology & Printing Solutions</h1>
+    <p>Mission: To provide affordable and reliable ICT, printing, and online services that empower individuals, students, and businesses.</p>
+    <p>Vision: To be Garissa’s leading hub for technology solutions and digital services, trusted for quality and innovation.</p>
+    <a href="#services">Explore Our Services</a>
   </section>
 
-  <section class="services">
-    <div class="service">
-      <h3>🖨 Printing</h3>
-      <p>High-quality printing services for all your needs.</p>
-    </div>
-    <div class="service">
-      <h3>📑 Photocopy & Lamination</h3>
-      <p>Keep your documents safe and professional.</p>
-    </div>
-    <div class="service">
-      <h3>🌐 Online Services</h3>
-      <p>Reliable digital solutions for the community.</p>
-    </div>
-    <div class="service">
-      <h3>💻 Computer Training</h3>
-      <p>Learn essential computer skills in our classes.</p>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+
+      <div class="service">
+        <h3>Printing & Photocopying</h3>
+        <p>High-quality printing, photocopying, and lamination for schools, businesses, and individuals, etc.</p>
+      </div>
+
+      <div class="service">
+        <h3>Scanning & Typing</h3>
+        <p>Scanning of documents plus typing of exams, reports, assignments, letters, etc.</p>
+      </div>
+
+      <div class="service">
+        <h3>Online Services</h3>
+        <p>eCitizen services including Good Conduct, Passport application/renewal, NTSA, and more etc.</p>
+      </div>
+
+      <div class="service">
+        <h3>Electronic Signs</h3>
+        <p>LED displays, banners, and digital signage for businesses and events, etc.</p>
+      </div>
+
+      <div class="service">
+        <h3>Computer Training</h3>
+        <p>Training in computer basics, office software, internet use, and other ICT skills, etc.</p>
+      </div>
+
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 IfCoTech | All Rights Reserved</p>
-    <p>📧 Email: ifcotech.ke@gmail.com</p>
-    <a class="whatsapp" href="https://wa.me/254707084716" target="_blank">💬 WhatsApp Us</a>
+    <p>📞 Phone: +254707084716 | 📧 Email: <a href="mailto:ifcotech.ke@gmail.com">ifcotech.ke@gmail.com</a></p>
+    <p>&copy; 2025 IfCoTech. All Rights Reserved.</p>
   </footer>
+
+  <!-- WhatsApp Button -->
+  <div class="whatsapp">
+    <a href="https://wa.me/254707084716" target="_blank">💬 WhatsApp Us</a>
+  </div>
+
 </body>
 </html>
